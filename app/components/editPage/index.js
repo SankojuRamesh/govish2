@@ -112,7 +112,7 @@ const EditPage = () => {
             <Grid size={{ xs: 12, md: 6 }}>
               <div>
                 <h2 className="fs-6 text-black">Editor Page</h2>
-                <p className="fs-9">Editor for layers all Tempetes.</p>
+                <p className="fs-9">Editor for layers all Tempetessss.</p>
               </div>
               <div></div>
             </Grid>
