@@ -408,10 +408,13 @@ const MyVideos = () => {
         <Container>
           <div className="d-flex justify-content-between align-items-center menu-height-fix">
             <div className="flex-row d-flex gap-1">
-              <img
-                src="./images/logo-light-mode.svg"
-                className="h-30px h-lg-30px "
-              />
+              <Link href="/" className="pointer">
+                {" "}
+                <img
+                  src="./images/logo-light-mode.svg"
+                  className="h-30px h-lg-30px "
+                />
+              </Link>
               {/* 1 */}
 
               {/* 2 */}

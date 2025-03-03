@@ -1,12 +1,11 @@
-
 "use client";
 import "./global.css";
 import "./custom.scss";
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
+import Footer from "./components/footer";
 // const DynamicFooter = dynamic(() => import("./components/footer"));
 const DynamicHeader = dynamic(() => import("./components/header"));
-
 
 export default function RootLayout({ children }) {
   const path = usePathname();
@@ -22,22 +21,21 @@ export default function RootLayout({ children }) {
   };
   const routesToHideHeader = [
     // "/",
-    
   ];
   const routesToHideFooter = [
     // "/",
-    
   ];
   const shouldHideHeader =
-  routesToHideHeader.includes(path) || isDynamicRoute(path);
-// const shouldHideFooter =
-//   routesToHideFooter.includes(path) || isDynamicRoute(path);
+    routesToHideHeader.includes(path) || isDynamicRoute(path);
+  // const shouldHideFooter =
+  //   routesToHideFooter.includes(path) || isDynamicRoute(path);
   return (
     <html lang="en">
-      <body >
-      {!shouldHideHeader && <DynamicHeader />}
+      <body>
+        {!shouldHideHeader && <DynamicHeader />}
         {children}
         {/* {!shouldHideFooter && <DynamicFooter />} */}
+        <Footer />
       </body>
     </html>
   );
