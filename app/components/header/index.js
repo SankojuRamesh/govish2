@@ -421,7 +421,7 @@ const MyVideos = () => {
 
               {/* 3 */}
 
-              {data.map((item) => (
+              {data.map((item, index) => (
                 <div>
                   <Button
                     id="basic-button"

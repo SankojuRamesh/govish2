@@ -268,7 +268,7 @@ const AssetsPage = () => {
                         />
                       </div>
                       <div className="d-flex justify-content-between align-items-center mt-2">
-                        <span className="fs-10">{image.name}</span>
+                        <span className="fs-8">{image.name}</span>
                         <a
                           href="#"
                           className="arrow-left d-flex justify-content-center align-items-center rounded"
@@ -308,6 +308,7 @@ const AssetsPage = () => {
                       open={open}
                       onClose={toggleDrawer(false)}
                       anchor="right"
+                      className="modal-drawer"
                     >
                       <Box
                         sx={{ width: 100, padding: 4 }}

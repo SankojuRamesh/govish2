@@ -74,24 +74,23 @@ const MyTemplete = () => {
 
         <Grid container>
           <Grid
-            size={{ xs: 12, md: 6 }}
+            size={{ xs: 10, md: 6 }}
             className="d-flex flex-column align-content-center justify-content-center "
           >
             <div className="d-flex flex-row mb-3 align-items-center">
-              <h3 className="fs-6 me-2 m-0">Favourites (2)</h3>
+              <h3 className="fs-6 me-2 m-0">My Templetes (1)</h3>
               <input
                 placeholder="Search icons…"
                 aria-label="search icons"
-                class="MuiInputBase-input css-aae3xl"
                 type="text"
                 value=""
-                className="border-0  ml-2 fs-8 rounded"
+                className="border-0  ml-2 fs-9 rounded"
               />
             </div>
           </Grid>
 
           <Grid
-            size={{ xs: 12, md: 6 }}
+            size={{ xs: 2, md: 6 }}
             className="d-flex  align-content-end justify-content-end flex-row"
           >
             <a href="#" className="ml-2" onClick={toggleDrawerlist(true)}>
@@ -100,7 +99,7 @@ const MyTemplete = () => {
             <a href="#" onClick={toggleDrawer(true)}>
               <AppsIcon className="text-light" />
             </a>
-
+            {/* side Box */}
             <Drawer
               open={open}
               onClose={toggleDrawer(false)}
@@ -113,7 +112,9 @@ const MyTemplete = () => {
               >
                 <div className="d-flex justify-content-between modal-header">
                   <p className="mb-0">Select Filters Options</p>
-                  <div>X</div>
+                  <a className="cursor-pointer" onClick={() => setOpen(false)}>
+                    X
+                  </a>
                 </div>
                 <div className="mt-3 modal-body">
                   <div>
