@@ -109,7 +109,7 @@ const EditPage = () => {
       <Container style={{ marginTop: "80px" }}>
         <div className="mt-7 container">
           <Grid container spacing={3} className="mt-5 ">
-            <Grid size={{ xs: 12, md: 6 }}>
+            <Grid size={{ xs: 6, md: 6 }}>
               <div>
                 <h2 className="fs-6 text-black">Editor Page</h2>
                 <p className="fs-9">Editor for layers all Tempetessss.</p>

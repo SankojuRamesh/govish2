@@ -41,7 +41,7 @@ const Login = () => {
         {/* loop  */}
         <Grid container spacing={4}>
           {templates.map((template) => (
-            <Grid item xs={3} key={template.id}>
+            <Grid item sx={{ xs: 12, md: 3, lg: 3 }} key={template.id}>
               <div className="bg-white p-10 flex-column d-flex p-5 rounded">
                 <svg
                   width="25"
@@ -75,7 +75,7 @@ const Login = () => {
         {/* loop  */}
         <Grid container spacing={4}>
           {orderoverview.map((order) => (
-            <Grid item xs={3} key={order.id}>
+            <Grid item item sx={{ xs: 12, md: 3, lg: 3 }} key={order.id}>
               <div className="bg-white p-10 flex-column d-flex p-5 rounded">
                 <svg
                   width="25"
@@ -108,7 +108,7 @@ const Login = () => {
         {/* loop  */}
         <Grid container spacing={4}>
           {salesoverview.map((sales) => (
-            <Grid item xs={3} key={sales.id}>
+            <Grid item sx={{ xs: 12, md: 3, lg: 3 }} key={sales.id}>
               <div className="bg-white p-10 flex-column d-flex p-5 rounded">
                 <svg
                   width="25"

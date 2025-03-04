@@ -149,14 +149,13 @@ const InvitationCard = () => {
               fontSize: "10px",
             }}
           >
-            <IconButton className="p-1 text-white bg-dark rounded-2 bg-opacity-50">
-              <FullscreenIcon />
+            <IconButton className="p-1 text-white bg-dark rounded-2 bg-opacity-50 ">
+              <FullscreenIcon className="fs-5" />
             </IconButton>
-            <IconButton className="p-1 text-white bg-opacity-50">
-              <Link href="/edit-page">
-                <EditIcon className="fs-3 p-1 text-white bg-dark rounded-2 bg-opacity-50" />
-              </Link>
-            </IconButton>
+
+            <Link href="/edit-page" className="p-1 text-white bg-opacity-50">
+              <EditIcon className="fs-5 p-1 text-white bg-dark rounded-2 bg-opacity-50" />
+            </Link>
           </Box>
 
           <Box
@@ -174,11 +173,11 @@ const InvitationCard = () => {
             <Box className="p-1 text-white bg-dark rounded-2 bg-opacity-50 d-flex gap-2">
               <IconButton
                 onClick={() => setIsMuted(!isMuted)}
-                className="p-0 text-white"
+                className="p-0 text-white fs-5"
               >
                 {isMuted ? <VolumeOffIcon /> : <VolumeUpIcon />}
               </IconButton>
-              <Typography className="p-0 text-white mb-0">
+              <Typography className="p-0 text-white mb-0 fs-7">
                 {isHovered ? currentTime : duration}
               </Typography>
             </Box>
@@ -191,10 +190,10 @@ const InvitationCard = () => {
               </Link>
 
               <IconButton className="p-1 text-white bg-dark rounded-2 bg-opacity-50">
-                <FavoriteBorderIcon />
+                <FavoriteBorderIcon className="fs-5" />
               </IconButton>
               <IconButton className="p-1 text-white bg-dark rounded-2 bg-opacity-50">
-                <DeleteIcon />
+                <DeleteIcon className="fs-5" />
               </IconButton>
             </Box>
           </Box>
