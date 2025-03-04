@@ -49,7 +49,7 @@ const CategoryCard = () => {
             />
             {/* <Link href="#" className="span-none    h-auto w-auto p-0 min-wa ms-2 mb-2 position-absolute bottom-0 right-0 fs-4 text-white"><FaPlayCircle />
                         </Link> */}
-            <CardContent className="p-0 mt-3 position-absolute bottom-0 right-10">
+            <CardContent className="p-0 mt-3 position-absolute bottom-0 right-10 ml-2">
               <h4
                 href="#"
                 className="text-decoration-none fs-6  fw-medium text-white "

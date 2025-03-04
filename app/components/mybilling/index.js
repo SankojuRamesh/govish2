@@ -164,15 +164,22 @@ const MyBilling = () => {
                       </div>
                     </TableCell>
                     <TableCell>
-                      <div className="text-light">Nov 01, 2020 ,7:25 AM</div>
-                      <div className="badge rounded-pill bg-light text-dar me-2 badgelable fs-10">
-                        Vertical
-                      </div>
-                      <div className="badge rounded-pill bg-light text-dar me-2  badgelable fs-10">
-                        Hindus
-                      </div>
-                      <div className="badge rounded-pill bg-light text-dar  badgelable fs-10">
-                        Standred
+                      <div className="d-flex justify-content-sart align-items-center">
+                        <div className="users-img me-2"></div>
+                        <div>
+                          <div className="text-light">
+                            Nov 01, 2020 ,7:25 AM
+                          </div>
+                          <div className="badge rounded-pill bg-light text-dar me-2 badgelable fs-10">
+                            Vertical
+                          </div>
+                          <div className="badge rounded-pill bg-light text-dar me-2  badgelable fs-10">
+                            Hindus
+                          </div>
+                          <div className="badge rounded-pill bg-light text-dar  badgelable fs-10">
+                            Standred
+                          </div>
+                        </div>
                       </div>
                     </TableCell>
                     <TableCell align="left">
@@ -214,7 +221,7 @@ const MyBilling = () => {
                     </TableCell>
                     <TableCell>
                       <div className="d-flex justify-content-sart align-items-center">
-                        <div className="users-img">1</div>
+                        <div className="users-img me-2"></div>
                         <div>
                           <div className="text-light">
                             Nov 01, 2020 ,7:25 AM

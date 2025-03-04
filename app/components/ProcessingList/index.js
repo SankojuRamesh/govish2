@@ -27,14 +27,14 @@ const ProcessingList = () => {
       <Container className="main-container lt-100">
         <Grid container>
           <Grid
-            size={{ xs: 12, md: 6 }}
+            size={{ xs: 6, md: 6 }}
             className="d-flex flex-column align-content-center justify-content-center"
           >
             <h3 className="fs-6">Media Processing</h3>
             <p className="fs-9 light-text">Home Media generating</p>
           </Grid>
           {/*group down  */}
-          <Grid size={{ xs: 12, md: 6 }}>
+          <Grid size={{ xs: 6, md: 6 }}>
             <Box className="d-flex justify-content-end ">
               <div style={{ width: 200, padding: 0 }}>
                 <select
@@ -56,12 +56,15 @@ const ProcessingList = () => {
             size={{ xs: 6, md: 6 }}
             className="d-flex flex-column align-content-center justify-content-center "
           >
-            <div className="d-flex flex-row mb-3 align-items-center">
-              <h3 className="fs-6 mb-0 me-2 ">
+            <div className="d-flex flex-row  align-items-center ">
+              <h3 className="fs-6 mb-0 me-2 d-flex ">
                 Processing
                 <span> (1)</span>
               </h3>
-              <div className="bg-white pe-2" style={{ paddingleft: "20px" }}>
+              <div
+                className="bg-white pe-2 d-flex align-items-center"
+                style={{ paddingleft: "20px" }}
+              >
                 <span>
                   <SearchIcon className="fs-7" />
                 </span>
@@ -232,7 +235,7 @@ const ProcessingList = () => {
         </Grid>
 
         <div className="latest-template-banner"></div>
-        <Grid container spacing={3} className=" ">
+        <Grid container spacing={3} className="mt-2 ">
           <InvitationCard />
           <InvitationCard />
           <InvitationCard />

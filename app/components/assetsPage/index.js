@@ -70,34 +70,51 @@ const AssetsPage = () => {
           </Grid>
           <Grid size={{ xs: 12 }} className="assets-menu bg-white p-2">
             <ul>
-              <li onClick={() => setTabValue("myUpload")}>My Upload</li>
+              <li
+                onClick={() => setTabValue("myUpload")}
+                className={
+                  activeTab === "galleryImage" ? "active-tab" : " fs-8"
+                }
+              >
+                My Upload
+              </li>
               <li
                 onClick={() => setTabValue("galleryImage")}
-                className={activeTab === "galleryImage" ? "active-tab" : ""}
+                className={
+                  activeTab === "galleryImage" ? "active-tab" : " fs-8"
+                }
               >
                 Gallery Image
               </li>
               <li
                 onClick={() => setTabValue("stockImage")}
-                className={activeTab === "galleryImage" ? "active-tab" : ""}
+                className={
+                  activeTab === "galleryImage" ? "active-tab" : " fs-8"
+                }
               >
                 Stock Image
               </li>
               <li
                 onClick={() => setTabValue("stockVideo")}
-                className={activeTab === "galleryImage" ? "active-tab" : ""}
+                className={
+                  activeTab === "galleryImage" ? "active-tab" : " fs-8"
+                }
               >
                 Stock Video
               </li>
               <li
                 onClick={() => setTabValue("stockAudio")}
-                className={activeTab === "galleryImage" ? "active-tab" : ""}
+                className={
+                  activeTab === "galleryImage" ? "active-tab" : " fs-8"
+                }
               >
                 Stock Audio
               </li>
               <li
                 onClick={() => setTabValue("stockFonts")}
-                className={activeTab === "galleryImage" ? "active-tab" : ""}
+                className={
+                  activeTab === "galleryImage" ? "active-tab" : " fs-8"
+                }
               >
                 Stock Fonts
               </li>

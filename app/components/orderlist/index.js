@@ -96,14 +96,14 @@ const Orderlist = () => {
       <Container className="main-container lt-100">
         <Grid container>
           <Grid
-            size={{ xs: 12, md: 6 }}
+            size={{ xs: 6, md: 6 }}
             className="d-flex flex-column align-content-center justify-content-center"
           >
             <h3 className="fs-6">Order list</h3>
             <p className="fs-9 light-text">Home My orders</p>
           </Grid>
           {/*group down  */}
-          <Grid size={{ xs: 12, md: 6 }}>
+          <Grid size={{ xs: 6, md: 6 }}>
             <Box className="d-flex justify-content-end ">
               <div style={{ width: 200, padding: 0 }}>
                 <select
@@ -124,9 +124,9 @@ const Orderlist = () => {
             size={{ xs: 6, md: 6 }}
             className="d-flex flex-column align-content-center justify-content-center "
           >
-            <div className="d-flex flex-row mb-3 align-items-center">
-              <h3 className="fs-6 mb-0 me-2 ">
-                Orders <span> (2)</span>
+            <div className="d-flex flex-row align-items-center">
+              <h3 className="fs-6 mb-0 me-2 d-flex">
+                <span>Orders</span> <span> (2)</span>
               </h3>
               <input
                 placeholder="Search icons…"
@@ -274,7 +274,7 @@ const Orderlist = () => {
         </Grid>
 
         <div className="latest-template-banner"></div>
-        <Grid container spacing={3} className=" ">
+        <Grid container spacing={3} className="mt-2 ">
           <InvitationCard />
           <InvitationCard />
           <InvitationCard />

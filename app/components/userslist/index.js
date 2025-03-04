@@ -42,8 +42,9 @@ const UsersList = () => {
                 <select
                   class="form-select fs-7"
                   aria-label="Default select example"
+                  defaultValue="all"
                 >
-                  <option selected>All</option>
+                  <option value="all">All</option>
                   <option value="1">My Family</option>
                   <option value="2">Coustmer</option>
                   <option value="2">Friends</option>
