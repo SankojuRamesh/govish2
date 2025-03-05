@@ -289,16 +289,28 @@ border: 1px solid #f6efef;
         display: flex;
     flex-direction: column;
     height: calc(100vh - 20px);
+    @media screen and (max-width:760px) {
+        height: 100% !important;
+        margin-bottom: 30px;
+        
+    }
     &-inner{
      flex: 1;
     justify-content: center;
     display: flex;
     flex-direction: column;
+    @media screen and (max-width:760px) {
+        height: 100% !important;
+        
+    }
     }
     }
 
     .w-lg-500{
         width: 500px;
+        @media screen and (max-width:700px){
+            width: 100% !important;
+        }
     }
     .login-content{
         position: absolute;
@@ -306,6 +318,10 @@ border: 1px solid #f6efef;
         top: 40%;
         width: 70%;
         left: 20%;
+        @media screen and (max-width:700px){
+            width: 100% !important;
+            left: 0 !important;
+        }
     }
     .w-60px{
         width: 60px;
