@@ -12,6 +12,9 @@ import Paper from "@mui/material/Paper";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
 function createData(name, calories, fat, carbs, protein, data) {
   return { name, calories, fat, carbs, protein, data };
 }
@@ -47,12 +50,10 @@ const MyBilling = () => {
     <>
       <Container className="main-container lt-100">
         <Grid container>
-          {/* left */}
           <Grid size={6}>
             <h4 className="fs-5">My Billing</h4>
             <p className="text-light fs-9">Home Billing Statement</p>
           </Grid>
-          {/* right */}
           <Grid size={6} className="d-flex justify-content-end">
             <Button id="basic-button" onClick={handleClick}>
               Select Filter
@@ -125,7 +126,6 @@ const MyBilling = () => {
             </Menu>
           </Grid>
         </Grid>
-        {/* table */}
         <Grid container spacing={2}>
           <Grid size={12}>
             <TableContainer component={Paper}>

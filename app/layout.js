@@ -3,8 +3,8 @@ import "./global.css";
 import "./custom.scss";
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
-import Footer from "./components/footer";
-// const DynamicFooter = dynamic(() => import("./components/footer"));
+//import Footer from "./components/footer";
+const DynamicFooter = dynamic(() => import("./components/footer"));
 const DynamicHeader = dynamic(() => import("./components/header"));
 
 export default function RootLayout({ children }) {
@@ -20,22 +20,27 @@ export default function RootLayout({ children }) {
     return dynamicRoutes.some((route) => path.startsWith(route));
   };
   const routesToHideHeader = [
-    // "/",
+    "/admin/login",
+    "/admin/twostep",
+    "/admin/forgetpassword",
+    "/admin/newpassword",
   ];
   const routesToHideFooter = [
-    // "/",
+    "/admin/login",
+    "/admin/twostep",
+    "/admin/forgetpassword",
+    "/admin/newpassword",
   ];
   const shouldHideHeader =
     routesToHideHeader.includes(path) || isDynamicRoute(path);
-  // const shouldHideFooter =
-  //   routesToHideFooter.includes(path) || isDynamicRoute(path);
+  const shouldHideFooter =
+    routesToHideFooter.includes(path) || isDynamicRoute(path);
   return (
     <html lang="en">
       <body>
         {!shouldHideHeader && <DynamicHeader />}
         {children}
-        {/* {!shouldHideFooter && <DynamicFooter />} */}
-        <Footer />
+        {!shouldHideFooter && <DynamicFooter />}
       </body>
     </html>
   );

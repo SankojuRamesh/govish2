@@ -75,7 +75,7 @@ const Login = () => {
         {/* loop  */}
         <Grid container spacing={4}>
           {orderoverview.map((order) => (
-            <Grid item item sx={{ xs: 12, md: 3, lg: 3 }} key={order.id}>
+            <Grid item sx={{ xs: 12, md: 3, lg: 3 }} key={order.id}>
               <div className="bg-white p-10 flex-column d-flex p-5 rounded">
                 <svg
                   width="25"

@@ -247,6 +247,9 @@ border: 1px solid #f6efef;
     .select-filter{ width: 300px !important;}
     .user-box{ width: 40px; height: 40px; background-color: #000; border-radius: 5px; ; margin-right: 10px;}
     .edit-user{ background-color: #f4eeee; height: 100px; width: 100px;} 
+    .edit-user-edit{ width: 20px; height: 20px; background-color: #fff; border-radius: 50%; right:-10px; top: -10px; box-shadow: 2px 1px 1px #858484; display: flex; justify-content: center; align-items: center; }
+    .edit-user-close{ width: 20px; height: 20px; background-color: #fff; border-radius: 50%; right:-10px; bottom: -10px; box-shadow: 2px 1px 1px #858484; display: flex; justify-content: center; align-items: center; }
+
     .users-img{ width: 40px; height: 40px; background-color: #e4e8eb; border-radius: 4px;; }
     .users-img img{ border-radius: 4px;}
 
@@ -272,7 +275,45 @@ border: 1px solid #f6efef;
         }
     }
     }
-    .footer a:hover{ color: #009ef7 !important;}
+    .footer a:hover, .linkclass{ color: #009ef7 !important;}
     .cursor-pointer {
         cursor: pointer !important;
       }
+
+
+
+
+
+    //   admin CSS
+    .login-container{
+        display: flex;
+    flex-direction: column;
+    height: calc(100vh - 20px);
+    &-inner{
+     flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    }
+    }
+
+    .w-lg-500{
+        width: 500px;
+    }
+    .login-content{
+        position: absolute;
+        margin:0 auto;
+        top: 40%;
+        width: 70%;
+        left: 20%;
+    }
+    .w-60px{
+        width: 60px;
+    }
+    .h-60px{
+        height: 60px;;
+    }
+    .inputborder{
+        border:1px solid #cccc;
+    }
+    .twostep-logo{ width: 200px; margin: 0 auto;}

@@ -29,14 +29,14 @@ const UsersList = () => {
       <Container className="main-container lt-100">
         <Grid container>
           <Grid
-            size={{ xs: 12, md: 6 }}
+            size={{ xs: 6, md: 6 }}
             className="d-flex flex-column align-content-center justify-content-center"
           >
             <h3 className="fs-6">My Shared Users list</h3>
             <p className="fs-9 light-text">Home Templetes Share Users</p>
           </Grid>
           {/*group down  */}
-          <Grid size={{ xs: 12, md: 6 }}>
+          <Grid size={{ xs: 6, md: 6 }}>
             <Box className="d-flex justify-content-end ">
               <div style={{ width: 200, padding: 0 }}>
                 <select
@@ -60,10 +60,8 @@ const UsersList = () => {
             size={{ xs: 6, md: 6 }}
             className="d-flex flex-column align-content-center justify-content-center "
           >
-            <div className="d-flex flex-row mb-3 align-items-center">
-              <h3 className="fs-6 mb-0 me-2 ">
-                Users <span> (2)</span>
-              </h3>
+            <div className="d-flex flex-row align-items-center">
+              <h3 className="fs-6 mb-0 me-2 ">users</h3> <span> (2)</span>
               <input
                 placeholder="Search "
                 aria-label="search "
@@ -84,7 +82,12 @@ const UsersList = () => {
             <a href="#" className="text-light" onClick={toggleDrawer(true)}>
               <TuneIcon />
             </a>
-            <Drawer open={open} onClose={toggleDrawer(false)} anchor="right">
+            <Drawer
+              open={open}
+              onClose={toggleDrawer(false)}
+              anchor="right"
+              className="modal-drawer"
+            >
               <Box
                 sx={{ width: 100, padding: 4 }}
                 className="modal-box w-xs-100"
@@ -96,7 +99,9 @@ const UsersList = () => {
                       Edit Templetes Edited or Purches Templetes Edit for users
                     </p>
                   </div>
-                  <div onClick={toggleDrawer(false)}>X</div>
+                  <div onClick={toggleDrawer(false)} className="cursor-pointer">
+                    X
+                  </div>
                 </div>
 
                 <Grid container spacing={2} className="mt-2">
@@ -203,7 +208,7 @@ const UsersList = () => {
         </Grid>
 
         <div className="latest-template-banner"></div>
-        <Grid container spacing={3} className=" ">
+        <Grid container spacing={3} className="mt-2 ">
           {/*  */}
           <Grid size={{ md: 4, sm: 6, xs: 12 }}>
             <div className="bg-white p-2 ">

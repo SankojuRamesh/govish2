@@ -12,6 +12,8 @@ import Paper from "@mui/material/Paper";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import EditIcon from "@mui/icons-material/Edit";
+import CloseIcon from "@mui/icons-material/Close";
 function createData(name, calories, fat, carbs, protein, data) {
   return { name, calories, fat, carbs, protein, data };
 }
@@ -113,7 +115,17 @@ const ProfileDetails = () => {
           </Grid>
           <Grid className="mt-2 fs-7 flex-row" size={12}>
             <p className="mb-0"> Photo</p>
-            <div className="edit-user"></div>
+            <div className="edit-user position-relative">
+              <div className="edit-user-edit position-absolute ">
+                <EditIcon className="fs-7" />
+              </div>
+              <div className="edit-user-close position-absolute ">
+                <CloseIcon className="fs-7" />
+              </div>
+            </div>
+            <p className="mt-3 text-light">
+              Allowed file types: png, jpg, jpeg.
+            </p>
           </Grid>
           <Grid container spacing={2} size={12} className="mt-3">
             <Grid size={{ xs: 12, nd: 6, lg: 6 }}>
