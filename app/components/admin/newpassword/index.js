@@ -77,7 +77,7 @@ const AdminPassword = () => {
                 <div className="mt-2 d-flex gap-2">
                   <Button
                     variant="contained"
-                    className="w-100 mt-3"
+                    className="w-100 mt-3 p-10"
                     size="small "
                   >
                     Submit
